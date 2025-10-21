@@ -94,7 +94,7 @@ function manejarFormulario() {
       form.mensaje.value
     ]);
 
-    // Validación simple usando while
+    // Validación usando while
     const arr = Array.from(datos);
     let i = 0;
     while (i < arr.length) {
@@ -110,7 +110,7 @@ function manejarFormulario() {
   });
 }
 
-// Añadir interactividad a la barra de navegación
+// Añade interactividad a la barra de navegación
 document.getElementById("nav").addEventListener("click", e => {
   if (e.target.tagName === "A") {
     const seccion = e.target.dataset.section;
@@ -119,4 +119,5 @@ document.getElementById("nav").addEventListener("click", e => {
 });
 
 // Mostrar la sección inicial
+
 mostrarSeccion("inicio");
